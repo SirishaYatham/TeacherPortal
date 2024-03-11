@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+body 
+{
+    font-family: "Lexend", sans-serif;
+}
+* 
+{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+.sidebar 
+{
+    position: fixed;
+    left:-250px;
+    width:250px;
+    height:100%;
+    background-color:#fefefe;
+    transition: all .5s ease;
+}
+.sidebar h2 
+{
+    color:#030303;
+    font-size: 22px;
+    padding:0px 0px 8px 30px;
+    line-height: 70px;
+    user-select: none;
+}
+.sidebar ul a 
+{
+    display: block;
+    padding-left: 30px;
+    box-sizing: border-box;
+    line-height: 43px;
+    font-size: 20px;
+    color:#030303;
+    border:1px solid rgba(255,255,255,.1);
+    transition:.4s;
+}
+ul li:hover a 
+{
+    padding-left:40px ;
+    background-color: #f22929;
+    color:#fefefe;
+    border-radius:10px;
+    margin:0px 10px 0px 10px;
+}
+.sidebar ul a i 
+{
+    margin-right: 16px;
+}
+#check 
+{
+    display:none;
+}
+label #btn
+{
+    position: absolute;
+    cursor: pointer;
+    background-color: #f22929;
+    border-radius: 3px;
+}
+label #btn 
+{
+    left:40px;
+    top:25px;
+    font-size: 20px;
+    color:#fefefe;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+#check:checked ~ .sidebar 
+{
+    left:0;
+}
+#check:checked ~ label #btn 
+{
+    left:250px;
+    opacity: 0;
+    pointer-events: none;
+}
+.cross-icon 
+{
+    margin-left:150px;
+}
+#check:checked ~ section 
+{
+    margin-left: 250px;
+}
+section 
+{
+    background-color:#fefefe;
+    height:100vh;
+    transition: all .5s;
+}
+.section-container 
+{
+    padding:30px 10px 10px 120px;
+}
+#check:checked ~ .section-container 
+{
+    padding-left:30px;
+}
+.section-container h1 
+{
+    font-size: 30px;
+    margin:10px 0px 15px 10px;
+}
+.section-container h2 
+{
+    font-size: 23px;
+    margin:7px 0px 8px 10px;
+}
+.section-container p
+{
+    font-size: 15px;
+    color:grey;
+    margin:10px 0px 15px 10px;
+}
+.row-flex-container
+{
+    display: flex;
+    align-items: row;
+    justify-content: space-around;
+    padding:20px 10px 4px 10px;
+    width:250px;
+}
+.class-icon
+{
+    margin:5px 0px 0px -125px;
+    padding:8px;
+    background-color: #f22929;
+    color:#fefefe;
+    font-size: 19px;
+    height:20px;
+    border-radius: 10px;
+}
+.section-container .row-flex-container h2 
+{
+    font-size: 19px;
+    margin:10px 0px 5px -250px;
+}
+.section-container .row-flex-container p
+{
+    font-size: 15px;
+    margin:5px 0px 5px -5px;
+}
+.table-section 
+{
+    padding:0px 0px 0xp 50px;
+}
+.flex-container 
+{
+    display: flex;
+    align-items: row;
+    margin:3% 20% 2% 0%;
+}
+.Announcements-section 
+{
+    margin:5% 20% 2% 0%;
+}
+.Announcements-section h2 
+{
+    margin:5px 0px 35px 0px;
+}
+
+.Announcements-section .Announcements-icon 
+{
+    margin:0px -95px 0px 10px;
+}
+.Announcements-section .flex-container h3
+{
+    margin:4px 5px 2px 110px;
+}
+.Announcements-section .flex-container p
+{
+    margin:7px 5px 2px 110px;
+}
+#assignmentsSection
+{
+    margin:20px 0px 30px 0px;
+}
+.assignments 
+{
+    display: flex;
+    color:#030303;
+    align-items: row;
+    justify-content: space-around;
+    background-color:#fefeff;
+    border-radius:15px;
+    width:500px;
+    padding:10px;
+    border-color:#030303;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow:0 10px 10px rgba(100,100,100,0.5);
+    cursor:pointer;
+    margin:25px 0px -20px 0px;
+}
+.assignments h4 
+{
+    font-size: 16px;
+    margin:10px 0px 0px 0px;
+}
+.assignments p
+{
+    font-size: 16px;
+    margin:12px 0px 0px 0px;
+    color:#030303;
+}
+.assignments:hover 
+{
+    background-color: #f22929;
+    color:#fefefe;
+}
+.teacher-profile 
+{
+    font-size:19px;
+    color:#030303;
+    border-width: 1px;
+    padding:15px 30px 20px 40px;
+    width:75%;
+    background-color:#fefefe;
+    margin:25px 0px 0px 17px;
+}
+.teacher-profile h3
+{
+    margin: 0px 0px 5px -50px;
+}
+.announcement-space 
+{
+    margin:15px 0px 10px -45px;
+    height:25%;
+    width:50%;
+    font-size:15px;
+    color:#030303;
+    padding:8px;
+}
+.due-date 
+{
+    margin:9px 0px 5px 10px; 
+}
+.post-btn
+{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    margin: 2px 0px 5px 10px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+  
+.post-btn::before 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.9s ease;
+}
+  
+.post-btn:hover::before 
+{
+    left: 100%;
+}
+.post-btn:active 
+{
+    background-color: red;
+}
+.post-btn:active::before 
+{
+    left: 0;
+}
+  
+.student-flex-container 
+{
+    display: flex;
+    align-items: row;
+    justify-content: space-around;
+    padding:20px 10px 4px 10px;
+}
+.student-assignments 
+{
+    display: flex;
+    color:#030303;
+    align-items: row;
+    justify-content: space-around;
+    background-color:#fefeff;
+    border-radius:10px;
+    width:300px;
+    padding:5px;
+    border-color:#030303;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow:0 10px 10px rgba(100,100,100,0.5);
+    cursor:pointer;
+    margin-left: -90px;
+}
+.student-assignments h4 
+{
+    margin:10px;
+}
+.feedback-section 
+{
+    height:50vh;
+    margin:50px 0px 5px 0px;
+}
+.feedback-section h3 
+{
+    margin:5px 0px 30px 0px;
+}
+.feedback-sub-container 
+{
+    margin:10px 0px 30px 5px;
+}
+.feedback-sub-container p 
+{
+    margin-left:2px;
+}
+.feedback-date 
+{
+    margin-left:20px;
+    font-weight: 300;
+}
+.help-section 
+{
+    padding:5px 0px 10px 5px;
+}
